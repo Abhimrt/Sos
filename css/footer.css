@@ -1,0 +1,44 @@
+.footer-container {
+    justify-content: space-between;
+    padding: 8vw 8vh;
+    width: calc(100vw-16vw);
+    height: calc(50vh-16vh);
+    background-color: rgb(36, 35, 35);
+    color: rgba(255, 255, 255, 0.534);
+}
+
+.footer-container a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.534);
+    display: block;
+    margin-bottom: 5px;
+}
+
+.footer-container a:hover {
+    color: white;
+}
+
+.foot3 {
+    flex-direction: column;
+}
+
+.foot3 button {
+    margin: 5px;
+    font-size: 18px;
+    padding: 1vh 35px;
+    background-color: violet;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    transition: .3s ease;
+}
+
+.foot3 button:hover {
+    box-shadow: 0 0 10px violet;
+}
+
+.copy {
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
