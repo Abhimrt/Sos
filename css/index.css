@@ -1,0 +1,146 @@
+/* ========================header container ============================== */
+
+.header-container {
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    overflow: hidden;
+}
+
+.header-container .hea-cont-left {
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    margin-top: 25px;
+    /* background-color: black; */
+}
+
+.header-container .hea-cont-left h2 {
+    margin: 10px;
+    font-size: 40px;
+    font-weight: bolder;
+    color: rgb(116, 51, 116);
+}
+
+.header-container .hea-cont-left h3 {
+    font-size: 20px;
+}
+
+.header-container .hea-cont-right {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.header-container .hea-cont-right img {
+    width: 50%;
+    margin-top: 50px;
+}
+
+.hea-cont-left-bton {
+    width: 100%;
+}
+
+.hea-cont-left-bton button {
+    margin: 40px 50px;
+    padding: 12px 30px;
+    border-radius: 50px;
+    border: 1px solid rgb(116, 51, 116);
+    background-color: rgb(116, 51, 116);
+    transition: .3s all ease;
+}
+
+.hea-cont-left-bton button:hover {
+    box-shadow: 0 0 20px rgb(95, 52, 95);
+}
+
+.hea-cont-left-bton button a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* ====================Feaatures =============================== */
+
+.fea-cont {
+    width: 100vw;
+    height: 160vh;
+    overflow: hidden;
+}
+
+.fea-cont h2 {
+    font-size: 25px;
+    margin: 10px;
+    padding: 5px;
+    width: 100%;
+    border-bottom: 3px solid violet;
+    text-align: center;
+}
+
+.fea-cont h3 {
+    font-size: 20px;
+    margin: 20px;
+}
+
+.fea-cont div {
+    width: 48.5vw;
+    height: 48vh;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 5px;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    transition: background-image 1s ease;
+}
+
+.fea-temp-1 {
+    background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("../images/notes.jpeg");
+}
+
+.fea-temp-1:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url("../images/notes.jpeg");
+}
+
+.fea-temp-2 {
+    background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("../images/mcq.jpg");
+}
+
+.fea-temp-2:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url("../images/mcq.jpg");
+}
+
+.fea-temp-3 {
+    background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("../images/questoin-paper.jpeg");
+}
+
+.fea-temp-3:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url("../images/questoin-paper.jpeg");
+}
+
+.fea-temp-4 {
+    background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("../images/test.jpeg");
+}
+
+.fea-temp-4:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url("../images/test.jpeg");
+}
+
+.fea-temp-5 {
+    background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("../images/video-lecture.jpeg");
+}
+
+.fea-temp-5:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url("../images/video-lecture.jpeg  ");
+}
+
+.fea-temp-6 {
+    background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("../images/coding.jpeg");
+}
+
+.fea-temp-6:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url("../images/coding.jpeg");
+}
