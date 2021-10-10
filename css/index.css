@@ -182,7 +182,16 @@
 .panel h3 {
     font-size: 24px;
     position: absolute;
-    bottom: 30px;
+    bottom: 40px;
+    left: 80px;
+    margin: 0;
+    opacity: 0;
+    color: rgb(223, 26, 223);
+}
+.panel p{
+    font-size: 18px;
+    position: absolute;
+    bottom: 20px;
     left: 80px;
     margin: 0;
     opacity: 0;
@@ -193,17 +202,65 @@
     border-radius: 0px;
 }
 
-.panel.active h3 {
+.panel.active h3,
+.panel.active p {
     opacity: 1;
     transition: opacity 0.3s ease-in 0.4s;
 }
+/*------------------------------link-------------------------------- */
+.links{
+    flex-direction: column;
+}
+.links-container{
+    margin-bottom: 20px;
+    width: 90vw;
+    height: 35vh;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex:.4;
+}
+.icon a{
+    font-size: 10EM;
+    height: 25vh;
+    color: rgb(28, 153, 153);
+    text-decoration: none;
+    
+}
+.icon .fab{
+    cursor: pointer;
+    transition: .3s ease;
+}
+.icon .fab:hover{
+    transform: translatey(-10px);
+}
 
-@media(max-width:480px) {
-    .container {
-        width: 100vw;
+@media(max-width:700px) {
+    /*---------------------------- headeer----------------------------- */
+    .header-container .hea-cont-left{
+        width: 100%;
     }
-    .panel:nth-of-type(4),
-    .panel:nth-of-type(5) {
+    .header-container .hea-cont-right{
         display: none;
     }
+    /* ----------------------features----------------------- */
+    .fea-cont {
+        height: 300vh;
+    }
+    .fea-cont div{
+        width: 100%;
+    }
+    /*---------------------- help---------------------- */
+    .help{
+        height:65vh ;
+    }
+    .help-container {
+        width: 100vw;
+    }
+    .panel{
+        height: 50vh;
+    }
+    
 }
