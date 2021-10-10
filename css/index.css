@@ -1,5 +1,18 @@
 /* ========================header container ============================== */
-
+#videoBg{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    width: 100%;
+    opacity: .7;
+}
+header{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+}
 .header-container {
     width: 100vw;
     height: 100vh;
@@ -223,8 +236,8 @@
     flex:.4;
 }
 .icon a{
-    font-size: 10EM;
-    height: 25vh;
+    font-size: 12vw;
+    height: 20vh;
     color: rgb(28, 153, 153);
     text-decoration: none;
     
@@ -239,11 +252,23 @@
 
 @media(max-width:700px) {
     /*---------------------------- headeer----------------------------- */
+    #videoBg{
+        display: none;
+    }
+    .header-container{
+        background-image: linear-gradient(rgba(255, 255, 255, 0.377),rgba(255, 255, 255, 0.377)), url("../images/notes.jpeg");
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+    }
     .header-container .hea-cont-left{
         width: 100%;
     }
     .header-container .hea-cont-right{
         display: none;
+    }
+    .hea-cont-left-bton{
+        flex-direction: column;
     }
     /* ----------------------features----------------------- */
     .fea-cont {
@@ -262,5 +287,22 @@
     .panel{
         height: 50vh;
     }
-    
+    /* -----------------------links----------------------------- */
+    .icon a{
+        font-size: 20vw;
+        height: 20vh;
+    }
+
+}
+@media(min-aspect-ratio: 16/9){
+    #videoBg{
+        width: 100%;
+        height: auto;
+    }
+}
+@media(max-aspect-ratio: 16/9){
+    #videoBg{
+        width: auto;
+        height: 100%;
+    }
 }
