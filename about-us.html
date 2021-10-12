@@ -7,6 +7,7 @@
     <title>SOS | About-us</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/navbar-footer.css">
+    <link rel="stylesheet" href="css/about.css">
     <link rel="icon" href="images/logo1.png">
 </head>
 <body>
@@ -29,19 +30,20 @@
             </div>
         </div>
         </header>
+        <!--------------------------------------main------------------------------------>
         <main>
             <div class="container m-3 ">
                 <div class="row justify-content-around mb-4 ">
                     <div class="col-md-3 ">
                         <img src="images/about1.jpeg" style="width: 100%;" alt="">
                     </div>
-                    <div class="col-md-7">
+                    <div class="col-md-7 center flex-column">
                         <h2>Liam</h2>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id voluptatum debitis maxime quod labore natus optio corrupti tempore voluptatibus placeat magnam et fugiat, neque voluptates provident saepe est doloremque repellendus aliquid! Repellat, enim. Error eveniet nisi consequatur ratione ducimus quia quibusdam minima saepe ipsam, ea a suscipit delectus in laudantium!</p>
                     </div>
                 </div>
                 <div class="row justify-content-around mb-4">
-                    <div class="col-md-7">
+                    <div class="col-md-7 center flex-column" >
                         <h2>Emma</h2>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id voluptatum debitis maxime quod labore natus optio corrupti tempore voluptatibus placeat magnam et fugiat, neque voluptates provident saepe est doloremque repellendus aliquid! Repellat, enim. Error eveniet nisi consequatur ratione ducimus quia quibusdam minima saepe ipsam, ea a suscipit delectus in laudantium!</p>
                     </div>
@@ -53,19 +55,39 @@
                     <div class="col-md-3 ">
                         <img src="images/about3.jpeg" style="width: 100%;" alt="">
                     </div>
-                    <div class="col-md-7">
+                    <div class="col-md-7 center flex-column">
                         <h2>Oliver</h2>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id voluptatum debitis maxime quod labore natus optio corrupti tempore voluptatibus placeat magnam et fugiat, neque voluptates provident saepe est doloremque repellendus aliquid! Repellat, enim. Error eveniet nisi consequatur ratione ducimus quia quibusdam minima saepe ipsam, ea a suscipit delectus in laudantium!</p>
                     </div>
                 </div>
                 <div class="row justify-content-around mb-4">
-                    <div class="col-md-7">
+                    <div class="col-md-7 center flex-column">
                         <h2>Charlotte</h2>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id voluptatum debitis maxime quod labore natus optio corrupti tempore voluptatibus placeat magnam et fugiat, neque voluptates provident saepe est doloremque repellendus aliquid! Repellat, enim. Error eveniet nisi consequatur ratione ducimus quia quibusdam minima saepe ipsam, ea a suscipit delectus in laudantium!</p>
                     </div>
                     <div class="col-md-3 ">
                         <img src="images/about4.jpeg" style="width: 100%;" alt="">
                     </div>
+                </div>
+            </div>
+            <!-------------------------------- contact ---------------------------------->
+            <div class="contact-main" id="contact">
+                <hr>
+                <h3 id="">Contact</h3>
+                <hr>
+            </div>
+            <div class="contact">
+                <div class="con-row1">
+                    <form action="">
+                        <input type="text" placeholder="Name.." class="input" required>
+                        <input type="email" placeholder="Email.." class="input" required>
+                        <textarea name="" id="" cols="10" rows="2" placeholder="Description." required></textarea>
+                        <input type="submit" class="button" onclick="Submit()">
+                    </form>
+                </div>
+                <div class="con-row2">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3490.4831187980676!2d77.63881451459439!3d28.973051675339242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390c668fdea4d87f%3A0x8795def814a486e7!2sMIET%20College!5e0!3m2!1sen!2sin!4v1632031357891!5m2!1sen!2sin"
+                        style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>
         </main>
@@ -88,7 +110,7 @@
             </div>
             <div class="foot3 center">
                 <p> We Welcome your suggestion.</p><br>
-                <button>Contact</button>
+                <a href="about-us.html"><button> Contact</button></a>
             </div>
         </div>
         <!--------------------------Copyright------------------------------->

@@ -26,7 +26,6 @@ header{
     height: 100%;
     flex-direction: column;
     margin-top: 25px;
-    /* background-color: black; */
 }
 
 .header-container .hea-cont-left h2 {
@@ -260,6 +259,7 @@ header{
         background-attachment: fixed;
         background-position: center;
         background-size: cover;
+        overflow: hidden;
     }
     .header-container .hea-cont-left{
         width: 100%;
