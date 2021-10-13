@@ -7,6 +7,9 @@
     width: 100%;
     opacity: .7;
 }
+video{
+    overflow: hidden;
+}
 header{
     position: relative;
     width: 100vw;
@@ -239,6 +242,7 @@ header{
     height: 20vh;
     color: rgb(28, 153, 153);
     text-decoration: none;
+    overflow: hidden;
     
 }
 .icon .fab{
