@@ -9,7 +9,21 @@
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
-
+.up-box{
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 5;
+    width: 30px;
+    height: 35px;
+    border-radius: 5px;
+    box-shadow: 0 0 8px black;
+    background-color: rgba(0, 0, 0, 0.315);
+    color: white;
+}
+.margin-top{
+    margin-top: 80px;
+}
 .center {
     display: flex;
     align-items: center;
@@ -22,7 +36,8 @@
     width: 100vw;
     height: 70px;
     display: flex;
-    z-index: 2;
+    z-index: 1;
+    /* overflow: hidden; */
 }
 
 .nav-logo {
@@ -40,6 +55,9 @@
 }
 
 .nav-link {
+    position: absolute;
+    bottom: 0;
+    right: 0;
     width: 75%;
     height: 100%;
     box-sizing: border-box;
@@ -49,10 +67,12 @@
 }
 
 .nav-link ul {
-    position: absolute;
-    bottom: 0;
+    position: fixed;
+    top: 20px;
     right: 5%;
     list-style: none;
+    z-index: 5;
+
 }
 
 .nav-link ul li a {
