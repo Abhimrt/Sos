@@ -23,7 +23,7 @@
 
 .con-row1 .input,
 .con-row1 .button,
-.con-row1 textarea {
+.con-row1 .textarea {
     display: block;
     margin: 50px;
     border: 0;
@@ -32,7 +32,7 @@
 }
 
 .con-row1 .input,
-.con-row1 textarea {
+.con-row1 .textarea {
     border-bottom: 1px solid aqua;
     width: 80%;
 }
