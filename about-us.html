@@ -17,7 +17,14 @@
      <!-------------------------header ----------------------------------------->
      <header>
         <!-------------------------------------Navbar ------------------------->
-        <div class="navbar1 " >
+        <div class="open-nav " id="openNav">
+            <i class="fas fa-bars" onclick="openNav()"></i>
+        </div>
+        
+        <div class="navbar1" id="navbar">
+            <div class="close-nav " id="closeNav">
+                <i class="fas fa-times" onclick="closeNav()"></i>
+            </div>
             <div class="nav-logo center">
                 <img src="images/logo4.png" alt="">
             </div>
@@ -121,6 +128,8 @@
             <p>Copyright &copy; Abhishek Singhal</p>
         </div>
     </footer>
-    <script src="https://kit.fontawesome.com/7847165dd9.js" crossorigin="anonymous"></script>
+   <!------------------------------------javascript------------------------------->
+   <script src="https://kit.fontawesome.com/7847165dd9.js" crossorigin="anonymous"></script>
+   <script src="js/script.js"></script>
 </body>
 </html>
