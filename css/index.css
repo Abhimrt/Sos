@@ -240,7 +240,7 @@ header{
 }
 .icon a{
     font-size: 12vw;
-    height: 20vh;
+    height: 22vh;
     color: rgb(28, 153, 153);
     text-decoration: none;
     overflow: hidden;
@@ -251,7 +251,7 @@ header{
     transition: .3s ease;
 }
 .icon .fab:hover{
-    transform: translatey(-10px);
+    transform: translatey(-20px);
 }
 
 @media(max-width:700px) {
@@ -292,10 +292,13 @@ header{
     .panel{
         height: 50vh;
     }
+    .panel h3{
+        bottom: 28%;
+    }
     /* -----------------------links----------------------------- */
     .icon a{
         font-size: 20vw;
-        height: 8vh;
+        height: 20vh;
     }
 
 }
