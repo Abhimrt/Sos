@@ -7,21 +7,8 @@
     <title>SOS | TEST</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/navbar-footer.css">
-    <link rel="stylesheet" href="css/video.css">
+    <link rel="stylesheet" href="css/test.css">
     <link rel="icon" href="images/logo1.png">
-    <style>
-        .button{
-            width: 100%;
-            height: 5vh;
-            background-color: #fff;
-            border-radius: 25px;
-            transition: 1s ease;
-        }
-        .button:hover{
-            background-color:violet;
-            box-shadow: 1px 1px 20px 0 violet, -1px -1px 20px 0 violet;
-        }
-    </style>
 </head>
 <body>
     <div class="up-box center">
@@ -51,7 +38,12 @@
         </div>
     </div>
         </header>
+        <!------------------------------------main--------------------------------------->
         <main>
+            <div class="before-test-container center" id="testContainer">
+                <h2 id="result">This Page contain same Quiz related to HTMl. Each correct answer contain 1 marks.You have to score atleast 6 marks to pass the test</h2>
+                <button class="button" onclick="closeContainer()">Start Test</button>
+            </div>
         <div class="container margin-top">
             <div class="row center">
                 <div class="col-md-10 text-center">
@@ -64,10 +56,10 @@
                     <div class="col-md-10 ">
                         <h5>1) HTML stands for</h5>
                         <ol>
-                            <li><input type="radio" name="Ques1" required> HighText Machine Language</li>
-                            <li><input  type="radio" name="Ques1" required> HyperText and links Markup Language</li>
-                            <li><input type="radio" name="Ques1" id="Ques1" required>HyperText Markup Language</li>
-                            <li><input type="radio" name="Ques1" required>None of these</li>
+                            <li><input type="radio" name="Ques1" > HighText Machine Language</li>
+                            <li><input  type="radio" name="Ques1" > HyperText and links Markup Language</li>
+                            <li><input type="radio" name="Ques1" id="Ques1" >HyperText Markup Language</li>
+                            <li><input type="radio" name="Ques1" >None of these</li>
                         </ol>
                     </div>
                 </div>

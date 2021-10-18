@@ -1,4 +1,8 @@
-alert("This Page contain same Quiz related to HTMl. Each correct answer contain 1 marks.You have to score atleast 6 marks to pass the test")
+// alert("This Page contain same Quiz related to HTMl. Each correct answer contain 1 marks.You have to score atleast 6 marks to pass the test")
+const cont = document.getElementById('testContainer');
+function closeContainer() {
+    cont.style.top="-105vh";
+}
 function check(){
     let i=0;
     if(document.getElementById("Ques1").checked==true)
