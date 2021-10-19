@@ -1,14 +1,33 @@
+body{
+    overflow-y: hidden;
+}
 .before-test-container{
     flex-direction: column;
     position: absolute;
     top: 0;
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.8),rgba(255, 255, 255, 0.8));
-    z-index: 20;
+    background-image: linear-gradient(rgba(238, 130, 238, 0.95),rgba(238, 130, 238, 0.95));
     padding: 10vh 10vw;
+    transition: .8s all ease;
+    scroll-behavior: none;
 }
-.button{
+#timeDisplay{
+    font-size: 20px;
+    position: fixed;
+    top: 90px;
+    right: 30px;
+    background-color: violet;
+}
+.timeDisplay{
+    font-size: 20px;
+    position: fixed;
+    top: 90px;
+    right: 85px;
+    background-color: violet;
+}
+.button,
+#button{
     width: 100%;
     height: 5vh;
     background-color: #fff;
@@ -16,6 +35,13 @@
     transition: 1s ease;
 }
 .button:hover{
-    background-color:violet;
-    box-shadow: 1px 1px 20px 0 violet, -1px -1px 20px 0 violet;
+    background-color:rgb(102, 9, 102);
+    color: white;
+    box-shadow: 1px 1px 20px 0 rgb(102, 9, 102), -1px -1px 20px 0 rgb(102, 9, 102);
+}
+@media(max-width:700px){
+    .timeDisplay,
+    #timeDisplay{
+        top: 50px;
+    }
 }

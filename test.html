@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SOS | TEST</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/navbar-footer.css">
     <link rel="stylesheet" href="css/test.css">
+    <link rel="stylesheet" href="css/navbar-footer.css">
     <link rel="icon" href="images/logo1.png">
 </head>
-<body>
+<body >
     <div class="up-box center">
         <a href="#"><i class="fas fa-angle-double-up"></i></a>
     </div>
@@ -40,10 +40,15 @@
         </header>
         <!------------------------------------main--------------------------------------->
         <main>
+            <!------------------------ test info -------------------------->
             <div class="before-test-container center" id="testContainer">
                 <h2 id="result">This Page contain same Quiz related to HTMl. Each correct answer contain 1 marks.You have to score atleast 6 marks to pass the test</h2>
-                <button class="button" onclick="closeContainer()">Start Test</button>
+                <button id="button" onclick="closeContainer()">Start Test</button>
             </div>
+            <!-------------------------time display---------------------------->
+            <span class="timeDisplay">Time Left:</span>
+            <span id="timeDisplay" >00</span>
+            <!-------------------------------test----------------------------->
         <div class="container margin-top">
             <div class="row center">
                 <div class="col-md-10 text-center">
@@ -51,7 +56,7 @@
                 </div>
             </div>
             <hr>
-            <form action="" onsubmit=" check()">
+            <form action="" onsubmit=" check(); return false">
                 <div class="row center">
                     <div class="col-md-10 ">
                         <h5>1) HTML stands for</h5>

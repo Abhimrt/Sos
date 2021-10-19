@@ -1,3 +1,6 @@
+*{
+    overflow-x: hidden;
+}
 /* ========================header container ============================== */
 #videoBg{
     position: absolute;
