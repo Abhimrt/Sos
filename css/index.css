@@ -161,8 +161,9 @@ header{
 }
 
 .fea-temp-6:hover {
-    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url("../images/coding.jpeg");
+    background-image: linear-gradient(rgba(90, 23, 23, 0.4), rgba(0, 0, 0, .4)), url("../images/coding.jpeg");
 }
+
 /*--------------------------help in--------------------------------------------- */
 .help{
     width: 100vw;

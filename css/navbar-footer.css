@@ -170,8 +170,19 @@ body{
     color: white;
     padding: 10px;
 }
-
-
+/* ======================scroll animation======================= */
+.lefthide{
+    transform: translateX(-500vh);
+    transition: transform .6s ease;
+}
+.righthide{
+    transform: translateX(500vh);
+    transition: transform .6s ease;
+}
+.show{
+    transform: translateX(0);
+}
+/* =============responsive========================== */
   @media(max-width:700px) {
       .open-nav{
           display: block;

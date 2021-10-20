@@ -3,7 +3,7 @@ document.body.addEventListener('contextmenu',(e)=>{
     e.preventDefault();
 })
 // ===================time limit==============================
-let a = 60;
+let a = 40;
 let time = setInterval(timePeriod,1000);
 let timedisplay = document.getElementById('timeDisplay');
 function timePeriod(){
