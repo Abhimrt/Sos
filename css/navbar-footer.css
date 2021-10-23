@@ -125,6 +125,9 @@ body{
 
 
 /* ============================ Footer ========================= */
+footer{
+    overflow: hidden;
+}
 
 .footer-container {
     justify-content: space-between;
@@ -133,6 +136,7 @@ body{
     height: calc(50vh-16vh);
     background-color: rgb(36, 35, 35);
     color: rgba(255, 255, 255, 0.534);
+    overflow: hidden;
 }
 
 .footer-container a {
@@ -179,8 +183,13 @@ body{
     transform: translateX(500vh);
     transition: transform .6s ease;
 }
+.tophide{
+    transform: translateY(-1000px);
+    transition: transform 1s ease;
+}
 .show{
     transform: translateX(0);
+    transform: translateY(0);
 }
 /* =============responsive========================== */
   @media(max-width:700px) {

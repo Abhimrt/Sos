@@ -295,6 +295,7 @@ header{
     }
     .panel{
         height: 50vh;
+        transition: 1s ease;
     }
     .panel h3{
         bottom: 28%;

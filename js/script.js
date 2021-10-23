@@ -24,10 +24,13 @@ panels.forEach((panel) => {
 // ============================on scroll animation==============
 let lh = document.querySelectorAll('.lefthide');
 let rh = document.querySelectorAll('.righthide');
+let th = document.querySelectorAll('.tophide');
+
 window.addEventListener('scroll',toshow);
 toshow();
 function toshow() {
     let bottom = window.innerHeight/6*5;
+    console.log("necha"+bottom)
     lh.forEach((show) => {
         const boxtop = show.getBoundingClientRect().top;
         if(boxtop < bottom){
@@ -38,10 +41,22 @@ function toshow() {
     })
     rh.forEach((show) => {
         const boxtop = show.getBoundingClientRect().top;
+        console.log(boxtop)
+        console.log(boxtop)
         if(boxtop < bottom){
             show.classList.add('show');
         }
         else
         show.classList.remove('show');
     })
+    th.forEach((show) => {
+        const boxtop = show.getBoundingClientRect().top;
+        console.log(boxtop)
+        if(boxtop < bottom){
+            show.classList.add('show');
+        }
+        else
+        show.classList.remove('show');
+    })
+    
 }
