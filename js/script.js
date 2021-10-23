@@ -13,7 +13,7 @@ const panels = document.querySelectorAll('.panel');
 
 panels.forEach((panel) => {
     panel.addEventListener(
-        'click', () => {
+        'mouseenter', () => {
             panels.forEach(panel => {
                 panel.classList.remove('active');
             })
