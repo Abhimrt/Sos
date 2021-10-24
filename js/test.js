@@ -1,5 +1,6 @@
 // ================to disable right click====================
 document.body.addEventListener('contextmenu',(e)=>{
+    alert("You were not allowed to right click on this page")
     e.preventDefault();
 })
 // ===================time limit==============================
