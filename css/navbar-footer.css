@@ -138,16 +138,23 @@ footer{
     color: rgba(255, 255, 255, 0.534);
     overflow: hidden;
 }
-
+.foot1,
+.foot2,
+.foot3{
+    width: 100px;
+}
 .footer-container a {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.534);
     display: block;
     margin-bottom: 5px;
+    transition: .4s all ease;
 }
 
 .footer-container a:hover {
-    color: white;
+    color: orange;
+    text-decoration: underline;
+    transform: translateX(10px);
 }
 
 .foot3 {
