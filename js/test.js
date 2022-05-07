@@ -74,3 +74,19 @@ function check(){
         location.reload();
     },1000)
 }
+
+// for visiblity
+let warning = 3
+document.addEventListener("visibilitychange", (event) => {
+  if(warning==0 && (a<40&&a>0) && document.visibilityState == "visible"){ 
+      
+    alert("You crossed the limit, and your test submit automatically. ")
+    check()
+}
+ else if (document.visibilityState == "visible" && (a<40&&a>0) && warning!=0) {
+    alert("You have CHANGE the Tab. Now you have only "+ warning + " chance left")
+  }else  if((a<40&&a>0)) {
+    warning--
+    console.log(warning);
+  }
+});

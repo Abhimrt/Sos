@@ -1,6 +1,12 @@
 body{
     overflow-y: hidden;
 }
+main{
+    -webkit-user-select: none;
+ -moz-user-select: none;
+ -ms-user-select: none;
+ user-select: none;
+}
 .before-test-container{
     flex-direction: column;
     position: absolute;
